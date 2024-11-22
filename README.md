@@ -21,7 +21,7 @@ Source(Kaggle): [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunpr
 - Note: You have to have Azure account and can check out How to create free account!
 - Utilized the Tokyo olympic dataset from Kaggle.
 - Imported the dataset using Python to Postgresql.
-<p><img src="images/SQL_DB.jpg" alt="SQL_DB" width="800px"></p>
+<p><img src="images/postgresql_db.jpg" alt="SQL_DB" width="800px"></p>
 
 - Create a Resource Group and manage all the Azure resources associated with this project.
 - Within the created resource group,set up a storage account. This is specifically configured to leverage Azure Data Lake Storage(ADLS) Gen2 capabilities.
