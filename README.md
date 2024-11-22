@@ -22,6 +22,7 @@ Source(Kaggle): [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunpr
 - Utilized the Tokyo olympic dataset from Kaggle.
 - Imported the dataset using Python to Postgresql.
 <p><img src="images/SQL_DB.jpg" alt="SQL_DB" width="800px"></p>
+
 - Create a Resource Group and manage all the Azure resources associated with this project.
 - Within the created resource group,set up a storage account. This is specifically configured to leverage Azure Data Lake Storage(ADLS) Gen2 capabilities.
 - Create a Container inside this storage account to hold the project's data. Two directories 'raw-data' and 'transfromed-data' are created to store raw data and transformed data.
@@ -43,6 +44,7 @@ Data ingestion from the on-premises Postgresql server to Azure SQL is accomplish
 8. Configuring the File Format for and setting up the Linked Service Sink.
 9. Repeat above steps to load all the datasets. Note: you can loop as well.
 10. You can connect all the copy data activity together and run them all at once.
+
 <p><img src="images/3.extracting the tables.jpg" alt="resource_group" width="800px"></p>
 <p><img src="images/4.tables_uploaded.jpg" alt="grant_access" width="800px"></p>  
 
@@ -55,9 +57,11 @@ Data ingestion from the on-premises Postgresql server to Azure SQL is accomplish
 3. Create a new notebook within Databricks and rename it appropriately, reflecting its purpose or the dataset it pertains to.
 4. Establishing a Connection to Azure Data Lake Storage (ADLS)
 5. Using the credentials (Client ID, Tenant ID, Secret), write the appropriate code in the Databricks notebook to mount ADLS.
+
 <p><img src="images/6.secrets.jpg" alt="secrets" width="800px"></p> 
 6. Do not forget to give permission to container > "tokyo-olympic-data" via Access Control (IAM) in order to avoid permission errors.
 <p><img src="images/7.allow access_to_container.jpg" alt="secrets" width="800px"></p>
+
 8. Writing Data Transformations mount ADLS Gen2 to Databricks.
 9. Writing Transformed Data to ADLS Gen2.
 <p><img src="images/8.successfully mounted.jpg" alt="secrets" width="800px"></p>
@@ -75,7 +79,7 @@ Data from the "transformed-data" folder is loaded into the Lake Database. Azure 
 <p><img src="images/14.tables_loaded.jpg" alt="all_views_success" width="800px"></p> 
 
 ## <ins>4. Data Analysis</ins>
-You can create SQL scripts to Perform Exploratory data analysis using SQL. You can also use PowerBI to generate your analysis reports.Power BI connects directly to the cloud pipeline using DirectQuery to dynamically update the database. But I added some SQL scripts for simple data analysis in this project without Power BI analysis.
+You can create SQL scripts to Perform Exploratory data analysis using SQL. You can also use PowerBI to generate your analysis reports. Power BI connects directly to the cloud pipeline using DirectQuery to dynamically update the database. But I added some SQL scripts for simple data analysis in this project without Power BI analysis.
 
 <p><img src="images/15.jpg" alt="sql_script" width="800px"></p>
 <p><img src="images/15.1.jpg" alt="sql_script" width="800px"></p>
