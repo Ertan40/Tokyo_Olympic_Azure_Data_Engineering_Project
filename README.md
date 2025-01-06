@@ -12,7 +12,7 @@
 Source(Kaggle): [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
 
 ## Azure Services Used
-- Azure Data Factory: For data ingestion from GitHub.
+- Azure Data Factory: For data ingestion from the local PostgreSQL.
 - Azure Data Lake Storage Gen2: As the primary data storage solution.
 - Azure Databricks: For data transformation tasks.
 - Azure Synapse Analytics: To perform in-depth data analytics.
